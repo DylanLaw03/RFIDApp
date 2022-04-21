@@ -79,7 +79,7 @@
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\SettingsVewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Database\Page1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Database\DatabasePage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\SettingPage.xaml.cs">
       <DependentUpon>SettingPage.xaml</DependentUpon>
     </Compile>

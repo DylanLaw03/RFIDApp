@@ -11,6 +11,7 @@ using ZebraRFIDApp.Model;
 using ZebraRFIDApp.Pages.About;
 using ZebraRFIDApp.Pages.Settings;
 using ZebraRFIDApp.Pages.Tab;
+using ZebraRFIDApp.Pages.Database;
 //New dependencies below
 using MySql.Data;
 using MySql.Data.MySqlClient;
@@ -68,6 +69,10 @@ namespace ZebraRFIDApp
                 Navigation.PushAsync(new SettingPage());
             }
             else if (tappedEventArg.ItemIndex == 3)
+            {
+                Navigation.PushAsync(new DatabasePage());
+            }
+            else if (tappedEventArg.ItemIndex == 4)
             {
                 Navigation.PushAsync(new AboutPage());
             }
