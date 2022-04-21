@@ -35,7 +35,7 @@ namespace ZebraRFIDApp.Pages.Inventory
                     readerManager = SdkHandler.GetInstance().ReaderManager;
                     readerManager.TagDataEvent += ReaderNotifyDataEvent;
                     readerManager.OperationBatchmode += ReaderManager_OperationBatchmode;
-                    readerManager.TriggerNotifyEvent += ReaderManagerTriggerEvent;
+                    //Not sure what this does, did not work on installation readerManager.TriggerNotifyEvent += ReaderManagerTriggerEvent;
 
 
 
