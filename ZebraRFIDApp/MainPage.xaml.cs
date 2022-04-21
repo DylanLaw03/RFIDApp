@@ -32,21 +32,22 @@ namespace ZebraRFIDApp
         /// <param name="tappedEventArg"></param>
         private void OnItemSelected(Object sender, ItemTappedEventArgs tappedEventArg)
         {
-
-            if (tappedEventArg.ItemIndex == 1)
+            ///Dylan Lawrence
+            ///Here I modified the options to open the menu.
+            if (tappedEventArg.ItemIndex == 0)
             {
                 Navigation.PushAsync(new TabbedPageContainner(ConstantsString.InventoryLoad));
             }
-            else if (tappedEventArg.ItemIndex == 2)
+            else if (tappedEventArg.ItemIndex == 1)
             {
                 Navigation.PushAsync(new TabbedPageContainner(ConstantsString.LocateTagLoad));
             }
-            else if (tappedEventArg.ItemIndex == 3)
+            else if (tappedEventArg.ItemIndex == 2)
             {
                 Navigation.PushAsync(new SettingPage());
             }
-            else if (tappedEventArg.ItemIndex == 6)
-            {            
+            else if (tappedEventArg.ItemIndex == 3)
+            {
                 Navigation.PushAsync(new AboutPage());
             }
             else
