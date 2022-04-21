@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "798dc722-833a-458b-b05f-5d702fe2a4d1": {
+      "ProjectGuid": "798dc722-833a-458b-b05f-5d702fe2a4d1",
+      "DisplayName": "ZebraRFIDApp.iOS",
+      "ColorIndex": 0
+    },
+    "92be7699-651f-4125-b6ff-69562bb3a341": {
+      "ProjectGuid": "92be7699-651f-4125-b6ff-69562bb3a341",
+      "DisplayName": "ZebraRFIDApp",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

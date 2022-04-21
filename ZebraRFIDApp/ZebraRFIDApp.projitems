@@ -79,6 +79,7 @@
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\SettingsVewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Database\Page1.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\SettingPage.xaml.cs">
       <DependentUpon>SettingPage.xaml</DependentUpon>
     </Compile>
@@ -122,7 +123,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\Antenna\LinkedProfilePage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />
     <Folder Include="$(MSBuildThisFileDirectory)API\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\About\" />

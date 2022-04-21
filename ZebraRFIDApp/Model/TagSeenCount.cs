@@ -8,7 +8,8 @@ namespace ZebraRFIDApp.Model
     /// </summary>
     public class TagSeenCount
     {
-        private string tagID;         private int seenCount;
+        private string tagID;
+        private int seenCount;
         private TagData tagData;
 
         /// <summary>

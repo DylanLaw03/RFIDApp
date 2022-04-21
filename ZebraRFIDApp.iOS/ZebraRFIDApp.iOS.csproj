@@ -72,72 +72,205 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <ImageAsset Include="Assets.xcassets\btnAccess.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\btnFilter.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\btnInv.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\btnLocate.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\btnRapidRead.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\btnSett.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\rightArrow.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\tab_access.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\tab_inv.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\tab_loc.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\tab_rr.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_antn.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_batt.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_beep.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_pwr_on.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_rdl.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_reg.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_save.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_sett.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_singl.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_strstp.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\title_tags.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\btnAccess.imageset\btnAccess.png" />
-    <ImageAsset Include="Assets.xcassets\btnFilter.imageset\btnFilter.png" />
-    <ImageAsset Include="Assets.xcassets\btnInv.imageset\btnInv.png" />
-    <ImageAsset Include="Assets.xcassets\btnLocate.imageset\btnLocate.png" />
-    <ImageAsset Include="Assets.xcassets\btnRapidRead.imageset\btnRapidRead.png" />
-    <ImageAsset Include="Assets.xcassets\btnSett.imageset\btnSett.png" />
-    <ImageAsset Include="Assets.xcassets\rightArrow.imageset\rightArrow.png" />
-    <ImageAsset Include="Assets.xcassets\title_antn.imageset\title_antn.png" />
-    <ImageAsset Include="Assets.xcassets\title_batt.imageset\title_batt.png" />
-    <ImageAsset Include="Assets.xcassets\title_beep.imageset\title_beep.png" />
-    <ImageAsset Include="Assets.xcassets\title_pwr_on.imageset\title_pwr_on.png" />
-    <ImageAsset Include="Assets.xcassets\title_rdl.imageset\title_rdl.png" />
-    <ImageAsset Include="Assets.xcassets\title_reg.imageset\title_reg.png" />
-    <ImageAsset Include="Assets.xcassets\title_save.imageset\title_save.png" />
-    <ImageAsset Include="Assets.xcassets\title_sett.imageset\title_sett.png" />
-    <ImageAsset Include="Assets.xcassets\title_singl.imageset\title_singl.png" />
-    <ImageAsset Include="Assets.xcassets\title_strstp.imageset\title_strstp.png" />
-    <ImageAsset Include="Assets.xcassets\title_tags.imageset\title_tags.png" />
-    <ImageAsset Include="Assets.xcassets\tab_inv.imageset\tab_inv.png" />
-    <ImageAsset Include="Assets.xcassets\tab_loc.imageset\tab_loc.png" />
-    <ImageAsset Include="Assets.xcassets\tab_rr.imageset\tab_rr.png" />
-    <ImageAsset Include="Assets.xcassets\tab_access.imageset\tab_access.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x-1.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x-1.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%401x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x-1.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ItunesArtwork%402x.png" />
+    <ImageAsset Include="Assets.xcassets\btnAccess.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnFilter.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnInv.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnLocate.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnRapidRead.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnSett.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rightArrow.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tab_access.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tab_inv.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tab_loc.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tab_rr.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_antn.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_batt.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_beep.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_pwr_on.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_rdl.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_reg.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_save.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_sett.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_singl.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_strstp.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_tags.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnAccess.imageset\btnAccess.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnFilter.imageset\btnFilter.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnInv.imageset\btnInv.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnLocate.imageset\btnLocate.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnRapidRead.imageset\btnRapidRead.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\btnSett.imageset\btnSett.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\rightArrow.imageset\rightArrow.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_antn.imageset\title_antn.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_batt.imageset\title_batt.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_beep.imageset\title_beep.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_pwr_on.imageset\title_pwr_on.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_rdl.imageset\title_rdl.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_reg.imageset\title_reg.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_save.imageset\title_save.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_sett.imageset\title_sett.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_singl.imageset\title_singl.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_strstp.imageset\title_strstp.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\title_tags.imageset\title_tags.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tab_inv.imageset\tab_inv.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tab_loc.imageset\tab_loc.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tab_rr.imageset\tab_rr.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\tab_access.imageset\tab_access.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ItunesArtwork%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net6.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.EntityFrameworkCore">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\net6.0\MySql.EntityFrameworkCore.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
@@ -151,6 +284,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MySql.Data">
+      <Version>8.0.18</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
   </ItemGroup>
@@ -180,4 +316,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\ZebraRFIDApp\ZebraRFIDApp.projitems" Label="Shared" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarZebraRFIDAppiOSHideInfoBar="True" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
