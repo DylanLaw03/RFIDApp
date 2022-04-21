@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{798DC722-833A-458B-B05F-5D702FE2A4D1}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ZebraRFIDApp.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ZebraRFIDApp.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ReleaseVersion>1.0.9</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\btnAccess.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\btnFilter.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\btnInv.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\btnLocate.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\btnRapidRead.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\btnSett.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\rightArrow.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab_access.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab_inv.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab_loc.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab_rr.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_antn.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_batt.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_beep.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_pwr_on.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_rdl.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_reg.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_save.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_sett.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_singl.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_strstp.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\title_tags.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\btnAccess.imageset\btnAccess.png" />
+    <ImageAsset Include="Assets.xcassets\btnFilter.imageset\btnFilter.png" />
+    <ImageAsset Include="Assets.xcassets\btnInv.imageset\btnInv.png" />
+    <ImageAsset Include="Assets.xcassets\btnLocate.imageset\btnLocate.png" />
+    <ImageAsset Include="Assets.xcassets\btnRapidRead.imageset\btnRapidRead.png" />
+    <ImageAsset Include="Assets.xcassets\btnSett.imageset\btnSett.png" />
+    <ImageAsset Include="Assets.xcassets\rightArrow.imageset\rightArrow.png" />
+    <ImageAsset Include="Assets.xcassets\title_antn.imageset\title_antn.png" />
+    <ImageAsset Include="Assets.xcassets\title_batt.imageset\title_batt.png" />
+    <ImageAsset Include="Assets.xcassets\title_beep.imageset\title_beep.png" />
+    <ImageAsset Include="Assets.xcassets\title_pwr_on.imageset\title_pwr_on.png" />
+    <ImageAsset Include="Assets.xcassets\title_rdl.imageset\title_rdl.png" />
+    <ImageAsset Include="Assets.xcassets\title_reg.imageset\title_reg.png" />
+    <ImageAsset Include="Assets.xcassets\title_save.imageset\title_save.png" />
+    <ImageAsset Include="Assets.xcassets\title_sett.imageset\title_sett.png" />
+    <ImageAsset Include="Assets.xcassets\title_singl.imageset\title_singl.png" />
+    <ImageAsset Include="Assets.xcassets\title_strstp.imageset\title_strstp.png" />
+    <ImageAsset Include="Assets.xcassets\title_tags.imageset\title_tags.png" />
+    <ImageAsset Include="Assets.xcassets\tab_inv.imageset\tab_inv.png" />
+    <ImageAsset Include="Assets.xcassets\tab_loc.imageset\tab_loc.png" />
+    <ImageAsset Include="Assets.xcassets\tab_rr.imageset\tab_rr.png" />
+    <ImageAsset Include="Assets.xcassets\tab_access.imageset\tab_access.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ItunesArtwork%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="ZebraiOSRfidLibrary">
+      <HintPath>..\iOSSDK\ZebraiOSRfidLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ZebraRfidSdk">
+      <HintPath>..\iOSSDK\ZebraRfidSdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\btnAccess.imageset\" />
+    <Folder Include="Assets.xcassets\btnFilter.imageset\" />
+    <Folder Include="Assets.xcassets\btnInv.imageset\" />
+    <Folder Include="Assets.xcassets\btnLocate.imageset\" />
+    <Folder Include="Assets.xcassets\btnRapidRead.imageset\" />
+    <Folder Include="Assets.xcassets\btnSett.imageset\" />
+    <Folder Include="Assets.xcassets\rightArrow.imageset\" />
+    <Folder Include="Assets.xcassets\tab_access.imageset\" />
+    <Folder Include="Assets.xcassets\tab_inv.imageset\" />
+    <Folder Include="Assets.xcassets\tab_loc.imageset\" />
+    <Folder Include="Assets.xcassets\tab_rr.imageset\" />
+    <Folder Include="Assets.xcassets\title_antn.imageset\" />
+    <Folder Include="Assets.xcassets\title_batt.imageset\" />
+    <Folder Include="Assets.xcassets\title_beep.imageset\" />
+    <Folder Include="Assets.xcassets\title_pwr_on.imageset\" />
+    <Folder Include="Assets.xcassets\title_rdl.imageset\" />
+    <Folder Include="Assets.xcassets\title_reg.imageset\" />
+    <Folder Include="Assets.xcassets\title_save.imageset\" />
+    <Folder Include="Assets.xcassets\title_sett.imageset\" />
+    <Folder Include="Assets.xcassets\title_singl.imageset\" />
+    <Folder Include="Assets.xcassets\title_strstp.imageset\" />
+    <Folder Include="Assets.xcassets\title_tags.imageset\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\ZebraRFIDApp\ZebraRFIDApp.projitems" Label="Shared" />
+</Project>
