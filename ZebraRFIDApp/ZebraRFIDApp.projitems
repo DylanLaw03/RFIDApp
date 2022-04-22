@@ -72,6 +72,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DatabaseItemPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\MenuItemModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HomeMenuViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\ConstantsString.cs" />
@@ -123,7 +124,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\Antenna\LinkedProfilePage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
     <Folder Include="$(MSBuildThisFileDirectory)API\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\About\" />
     <Folder Include="$(MSBuildThisFileDirectory)Pages\Settings\" />
