@@ -27,7 +27,7 @@ namespace ZebraRFIDApp.Model
 		   "RFID Tag: ",
 		};
 
-		public DatabaseItemPage(string assetID)
+		public DatabaseItemPage(string tagID)
         {
 
 			//create new TableSection
@@ -51,8 +51,8 @@ namespace ZebraRFIDApp.Model
 
 
 			//build query string
-			string sql = "SELECT * from tblTestTagInfo where assetItemId = '";
-			sql += assetID;
+			string sql = "SELECT * from tblTestTagInfo where tagID = '";
+			sql += tagID;
 			sql += "';";
 
 			//execute SQL statement

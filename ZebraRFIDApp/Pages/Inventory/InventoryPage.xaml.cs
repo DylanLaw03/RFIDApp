@@ -93,9 +93,12 @@ namespace ZebraRFIDApp.Pages.Inventory
             /// </summary>
             void UpdateUI()
             {
-        
-              
-                tagDataList = SdkHandler.GetTagDataList();
+                /* Code for testing
+                TagDataModel testTag = new TagDataModel();
+                testTag.tagID = "2016093008447A01101001A6";
+                tagDataList.Add(testTag);
+                */
+
                 reverseTagDataList = new List<TagDataModel>(tagDataList);
                 reverseTagDataList.Reverse();
                 lstTagData.ItemsSource = reverseTagDataList;
@@ -115,7 +118,9 @@ namespace ZebraRFIDApp.Pages.Inventory
             /// <param name="tappedEventArg">Event Argument</param>
             private void OnItemSelected(Object sender, ItemTappedEventArgs tappedEventArg)
             {
-            
+                //open DatabaseItemPage for that tag
+                Navigation.PushAsync(new DatabaseItemPage(tagDataList[tappedEventArg.ItemIndex].tagID));
+                /* Original Code
                 if (!this.disable)
                 {
                     this.disable = true;
@@ -148,10 +153,9 @@ namespace ZebraRFIDApp.Pages.Inventory
 
                     }
 
-
             
-                    tagDataList = SdkHandler.GetTagDataList();
 
+                
                     reverseTagDataList = new List<TagDataModel>(tagDataList);
                     reverseTagDataList.Reverse();
                     Device.BeginInvokeOnMainThread(() =>
@@ -164,7 +168,7 @@ namespace ZebraRFIDApp.Pages.Inventory
                     this.disable = false;
 
                 }
-            
+                */
          
             }
 

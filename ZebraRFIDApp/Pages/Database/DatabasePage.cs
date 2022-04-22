@@ -26,7 +26,7 @@ namespace ZebraRFIDApp.Pages.Database
 			conn.Open();
 
 			//select assetItemID from table, use this to add buttons to the Children of Parent where the text is the asset it
-			string sql = "SELECT assetItemID from tblTestTagInfo;";
+			string sql = "SELECT assetItemID, tagID from tblTestTagInfo;";
 			MySqlCommand cmd = new MySqlCommand(sql, conn);
             MySqlDataReader rdr = cmd.ExecuteReader();
 			while (rdr.Read())
@@ -43,8 +43,8 @@ namespace ZebraRFIDApp.Pages.Database
 				};
 				//event handler for click
 				databaseButton.Clicked += (sender, args) =>
-				{	//new page with rdr 0
-					Navigation.PushAsync(new DatabaseItemPage((string)rdr[0]));
+				{   //new page with rdr 1
+					Navigation.PushAsync(new DatabaseItemPage((string) rdr[1]));
 				};
 				//add to page
 				page.Children.Add(databaseButton);
