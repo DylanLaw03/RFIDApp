@@ -18,6 +18,9 @@ namespace ZebraRFIDApp.Model
             MenuList.Add(new MenuItemModel { Name = ConstantsString.Inventory });
             MenuList.Add(new MenuItemModel { Name = ConstantsString.LocateTag });
             MenuList.Add(new MenuItemModel { Name = ConstantsString.Setings });
+            //Added by Dylan
+            MenuList.Add(new MenuItemModel { Name = ConstantsString.Database });
+            /////////////////
             MenuList.Add(new MenuItemModel { Name = ConstantsString.About });
         }
     }

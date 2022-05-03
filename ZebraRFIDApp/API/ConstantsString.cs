@@ -41,9 +41,11 @@ namespace ZebraRFIDApp.API
             public const string AccessControl = "Access Control";
             public const string PreFilters = "Pre Filters";
             public const string About = "About";
+        //Strings added by Dylan
+            public const string Database = "Database";
 
-            //Setting menu
-            public const string ReaderList = "Reader List";
+        //Setting menu
+        public const string ReaderList = "Reader List";
             public const string Application = "Application";
             public const string Antenna = "Antenna";
             public const string SingulationControl = "Singulation Control";

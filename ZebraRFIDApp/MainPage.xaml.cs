@@ -11,6 +11,7 @@ using ZebraRFIDApp.Model;
 using ZebraRFIDApp.Pages.About;
 using ZebraRFIDApp.Pages.Settings;
 using ZebraRFIDApp.Pages.Tab;
+using ZebraRFIDApp.Pages.Database;
 //New dependencies below
 using MySql.Data;
 using MySql.Data.MySqlClient;
@@ -27,22 +28,6 @@ namespace ZebraRFIDApp
         {
             InitializeComponent();
             BindingContext = new HomeMenuViewModel();
-            //My SQL Connection established below.
-            string connStr = "server=webdb.uvm.edu;user=jjung2_admin;database=JJUNG2_RFID_TEST;port=3306;password=UzAn4dsM6VIZigk1";
-            MySql.Data.MySqlClient.MySqlConnection conn = new MySqlConnection(connStr);
-
-            Console.WriteLine("Connecting to MySQL...");
-            conn.Open();
-            // Perform database operations
-
-            string sql = "SELECT * FROM tblTestTagInfo";
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-            MySqlDataReader rdr = cmd.ExecuteReader();
-            while (rdr.Read())
-            {
-                Console.WriteLine(rdr[0] + " -- " + rdr[1]);
-            }
-            rdr.Close();
 
         }
 
@@ -68,6 +53,10 @@ namespace ZebraRFIDApp
                 Navigation.PushAsync(new SettingPage());
             }
             else if (tappedEventArg.ItemIndex == 3)
+            {
+                Navigation.PushAsync(new DatabasePage());
+            }
+            else if (tappedEventArg.ItemIndex == 4)
             {
                 Navigation.PushAsync(new AboutPage());
             }
