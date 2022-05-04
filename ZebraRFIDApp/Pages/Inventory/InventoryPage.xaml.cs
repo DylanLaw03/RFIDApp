@@ -93,11 +93,13 @@ namespace ZebraRFIDApp.Pages.Inventory
             /// </summary>
             void UpdateUI()
             {
-                /* Code for testing
+
+                
                 TagDataModel testTag = new TagDataModel();
-                testTag.tagID = "2016093008447A01101001A6";
+                testTag.tagID = "56414F54000000000000000000000010";
                 tagDataList.Add(testTag);
-                */
+                
+
 
                 reverseTagDataList = new List<TagDataModel>(tagDataList);
                 reverseTagDataList.Reverse();

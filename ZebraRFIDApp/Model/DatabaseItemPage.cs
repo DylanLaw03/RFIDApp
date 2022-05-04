@@ -25,6 +25,8 @@ namespace ZebraRFIDApp.Model
 		   "ItemID: ",
 		   "Item: ",
 		   "RFID Tag: ",
+		   "Inspector Name: ",
+		   "Inspection Result: "
 		};
 
 		public DatabaseItemPage(string tagID)
@@ -51,7 +53,7 @@ namespace ZebraRFIDApp.Model
 
 
 			//build query string
-			string sql = "SELECT * from tblTestTagInfo where tagID = '";
+			string sql = "SELECT assetItemID, assetItem, tagID, inspectName, inspectResult Location from tblTestTagInfo where tagID = '";
 			sql += tagID;
 			sql += "';";
 
@@ -61,7 +63,7 @@ namespace ZebraRFIDApp.Model
 			//Read from rdr
 			rdr.Read();
 
-			for (int i = 0; i < 3; ++i)
+			for (int i = 0; i < 5; ++i)
             {	//create new buttons for Table
 				var itemField = new EntryCell()
 				{
@@ -73,7 +75,8 @@ namespace ZebraRFIDApp.Model
 				cells.Add(itemField);
             }
 
-			var submit = new Button()
+            
+            var submit = new Button()
 			{
 				Text = "Submit",
 				VerticalOptions = LayoutOptions.CenterAndExpand,
@@ -82,7 +85,8 @@ namespace ZebraRFIDApp.Model
 				BorderColor = Color.Blue,
 				BackgroundColor = Color.Gray,
 				FontSize = 20,
-			};
+				Margin = new Thickness(10, 0)
+            };
 
 
 			//event handler for click
@@ -91,7 +95,12 @@ namespace ZebraRFIDApp.Model
 			{   //new page with rdr 0
 				foreach (EntryCell i in cells)
                 {
-					Console.WriteLine(i.Text);
+					string sql = String.Format("UPDATE tblTestTagInfo SET assetItem={1} tagID={2} inspectName={3} inspectResult={4} where tagID = '{0}';",
+						cells[0].GetValue(), cells[1].GetValue(), cells[2].GetValue(), cells[3].GetValue(), cells[4].GetValue());
+					
+					//execute SQL statement
+					MySqlCommand cmd = new MySqlCommand(sql, conn);
+					MySqlDataReader rdr = cmd.ExecuteReader();
                 }
 			};
 
